@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7756D040245877F700003FF1 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D03F245877F700003FF1 /* TagsViewController.swift */; };
 		7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D0412458791A00003FF1 /* MakePostViewController.swift */; };
+		7761CA0B24B8233800D8815F /* DataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CA0A24B8233800D8815F /* DataManagerTests.swift */; };
+		7761CA0D24B8238F00D8815F /* PresentationContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CA0C24B8238F00D8815F /* PresentationContentTests.swift */; };
 		77C66B0D24619EAB00E539EE /* CommunityProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C66B0C24619EAB00E539EE /* CommunityProfileTableViewController.swift */; };
 		77C66B0F2461AF6300E539EE /* CommunityProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C66B0E2461AF6300E539EE /* CommunityProfileTableViewCell.swift */; };
 		77D470B624608DDD003C2F4C /* CommunityProfile .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D470B524608DDD003C2F4C /* CommunityProfile .storyboard */; };
@@ -64,9 +66,23 @@
 		FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6C637245B12E8007F21C0 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7761CA0524B8225100D8815F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEAE5AC4245215B000809C2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEAE5ACB245215B000809C2E;
+			remoteInfo = Yana;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7756D03F245877F700003FF1 /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		7756D0412458791A00003FF1 /* MakePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePostViewController.swift; sourceTree = "<group>"; };
+		7761CA0024B8225100D8815F /* YanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7761CA0424B8225100D8815F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7761CA0A24B8233800D8815F /* DataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerTests.swift; sourceTree = "<group>"; };
+		7761CA0C24B8238F00D8815F /* PresentationContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContentTests.swift; sourceTree = "<group>"; };
 		77C66B0C24619EAB00E539EE /* CommunityProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityProfileTableViewController.swift; sourceTree = "<group>"; };
 		77C66B0E2461AF6300E539EE /* CommunityProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityProfileTableViewCell.swift; sourceTree = "<group>"; };
 		77D470B524608DDD003C2F4C /* CommunityProfile .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "CommunityProfile .storyboard"; sourceTree = "<group>"; };
@@ -125,6 +141,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7761C9FD24B8225100D8815F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEAE5AC9245215B000809C2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +165,16 @@
 				77C66B0C24619EAB00E539EE /* CommunityProfileTableViewController.swift */,
 			);
 			path = CommunityProfile;
+			sourceTree = "<group>";
+		};
+		7761CA0124B8225100D8815F /* YanaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7761CA0A24B8233800D8815F /* DataManagerTests.swift */,
+				7761CA0C24B8238F00D8815F /* PresentationContentTests.swift */,
+				7761CA0424B8225100D8815F /* Info.plist */,
+			);
+			path = YanaTests;
 			sourceTree = "<group>";
 		};
 		776708B524603FB8001BB9F9 /* Make Post */ = {
@@ -323,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				FEAE5ACE245215B000809C2E /* Yana */,
+				7761CA0124B8225100D8815F /* YanaTests */,
 				FEAE5ACD245215B000809C2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -331,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				FEAE5ACC245215B000809C2E /* Yana.app */,
+				7761CA0024B8225100D8815F /* YanaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -425,6 +460,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7761C9FF24B8225100D8815F /* YanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7761CA0924B8225100D8815F /* Build configuration list for PBXNativeTarget "YanaTests" */;
+			buildPhases = (
+				7761C9FC24B8225100D8815F /* Sources */,
+				7761C9FD24B8225100D8815F /* Frameworks */,
+				7761C9FE24B8225100D8815F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7761CA0624B8225100D8815F /* PBXTargetDependency */,
+			);
+			name = YanaTests;
+			productName = YanaTests;
+			productReference = 7761CA0024B8225100D8815F /* YanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FEAE5ACB245215B000809C2E /* Yana */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEAE5AE0245215B300809C2E /* Build configuration list for PBXNativeTarget "Yana" */;
@@ -449,10 +502,14 @@
 		FEAE5AC4245215B000809C2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Pedro Sousa";
 				TargetAttributes = {
+					7761C9FF24B8225100D8815F = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FEAE5ACB245215B000809C2E;
+					};
 					FEAE5ACB245215B000809C2E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -472,11 +529,19 @@
 			projectRoot = "";
 			targets = (
 				FEAE5ACB245215B000809C2E /* Yana */,
+				7761C9FF24B8225100D8815F /* YanaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7761C9FE24B8225100D8815F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEAE5ACA245215B000809C2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,6 +596,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7761C9FC24B8225100D8815F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7761CA0B24B8233800D8815F /* DataManagerTests.swift in Sources */,
+				7761CA0D24B8238F00D8815F /* PresentationContentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEAE5AC8245215B000809C2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,6 +645,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7761CA0624B8225100D8815F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEAE5ACB245215B000809C2E /* Yana */;
+			targetProxy = 7761CA0524B8225100D8815F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FEAE5ADA245215B300809C2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -583,6 +665,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7761CA0724B8225100D8815F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
+				INFOPLIST_FILE = YanaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldogomes.YanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yana.app/Yana";
+			};
+			name = Debug;
+		};
+		7761CA0824B8225100D8815F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
+				INFOPLIST_FILE = YanaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldogomes.YanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yana.app/Yana";
+			};
+			name = Release;
+		};
 		FEAE5ADE245215B300809C2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -703,7 +829,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = Yana/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -724,7 +850,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = Yana/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -742,6 +868,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7761CA0924B8225100D8815F /* Build configuration list for PBXNativeTarget "YanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7761CA0724B8225100D8815F /* Debug */,
+				7761CA0824B8225100D8815F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FEAE5AC7245215B000809C2E /* Build configuration list for PBXProject "Yana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
