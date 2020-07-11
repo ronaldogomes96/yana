@@ -12,4 +12,15 @@ import XCTest
 
 class PresentationContentTests: XCTestCase {
 
+    func test_PresentationContent_titlePage_phrase(){
+        
+        //Given
+        let sut = PresentationContent()
+        
+        //When
+        let content = sut.getContent(index: 1)
+        
+        //The
+        XCTAssertEqual(content.title, "Seja super")
+    }
 }
